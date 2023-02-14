@@ -92,6 +92,10 @@
       <path value="$PROJECT_DIR$/app/vendor/react/promise" />
       <path value="$PROJECT_DIR$/app/vendor/league/container" />
       <path value="$PROJECT_DIR$/app/vendor/cakephp/twig-view" />
+      <path value="$PROJECT_DIR$/app/vendor/cakephp/repl" />
+      <path value="$PROJECT_DIR$/app/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/app/vendor/.composer_home/cache" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/var-dumper" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

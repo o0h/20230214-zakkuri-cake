@@ -88,6 +88,10 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/react/promise" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/league/container" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/cakephp/twig-view" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/cakephp/repl" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/.composer_home/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/var-dumper" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
