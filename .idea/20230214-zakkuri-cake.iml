@@ -92,6 +92,9 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/psy/psysh" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/.composer_home/cache" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/vierge-noire/cakephp-fixture-factories" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/fakerphp/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/vierge-noire/cakephp-test-suite-light" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

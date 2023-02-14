@@ -4,6 +4,9 @@ declare(strict_types=1);
 namespace App\Test\TestCase\Controller;
 
 use App\Controller\ArticlesController;
+use App\Model\Table\ArticlesTable;
+use App\Test\Factory\articleFactory;
+use Cake\Http\Exception\NotFoundException;
 use Cake\TestSuite\IntegrationTestTrait;
 use Cake\TestSuite\TestCase;
 
@@ -47,7 +50,30 @@ class ArticlesControllerTest extends TestCase
      */
     public function testView(): void
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        // arrange
+        $data = ['slug' => 'sample' ];
+        // $entity = ArticlesTable::newEntity($data);
+        // ArticlesTable::save($entity);
+        $article = ArticleFactory::make()->persist();
+
+        // act
+        $articleId = $article->id;
+        $this->get("/articles/view/{$articleId}");
+
+        // arrange
+        $this->assertResponseOk();
+        $actual = $this->viewVariable('article');
+        $this->assertSame($articleId, $actual->id);
+    }
+
+    public function testView_articleNotExists(): void
+    {
+        // act
+        $articleId = 1001;
+        $this->get("/articles/view/{$articleId}");
+
+        // arrang-
+        $this->assertResponseCode(404);
     }
 
     /**

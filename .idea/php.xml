@@ -96,6 +96,9 @@
       <path value="$PROJECT_DIR$/app/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/app/vendor/.composer_home/cache" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/app/vendor/vierge-noire/cakephp-fixture-factories" />
+      <path value="$PROJECT_DIR$/app/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/app/vendor/vierge-noire/cakephp-test-suite-light" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
