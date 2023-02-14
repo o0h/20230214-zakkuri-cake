@@ -24,7 +24,7 @@ sh: ## 起動中のappサービスに入ってシェルを実行します
 	${DOCKER_COMMAND} exec app sh
 
 mysql: ## 起動中のdbサービスに入ってMySQLコマンドを対話モードで実行します
-	${DOCKER_COMMAND} exec db mysql -u app_user -psecret app_db
+	${DOCKER_COMMAND} exec db mysql -u root -prootsecret app_db
 
 ps: ## 起動中のサービスの一覧を表示します
 	${DOCKER_COMMAND} ps

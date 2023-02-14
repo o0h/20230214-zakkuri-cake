@@ -17,9 +17,9 @@ services:
     environment:
       LANG: ja_JP.UTF-8
       TZ: Asia/Tokyo
-      COMPOSER_HOME: "/opt/project/vendor/.composer_home"
+      COMPOSER_HOME: "/opt/project/app/vendor/.composer_home"
       DATABASE_URL: mysql://app_user:secret@zakkuri-cake-db/app_db
-      DATABASE_TEST_URL: mysql://test-user:secret@zakkuri-cake-db/test
+      DATABASE_TEST_URL: mysql://test_user:secret@zakkuri-cake-db/test
       PHP_IDE_CONFIG: serverName=zakkuri-cake-app
   nginx:
     image: nginx:alpine
@@ -38,9 +38,9 @@ services:
       MYSQL_DATABASE: app_db
       MYSQL_USER: app_user
       MYSQL_PASSWORD: secret
-      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+      MYSQL_ROOT_PASSWORD: 'rootsecret'
     ports:
       - "3341:3306"
     volumes:
       - db-volume:/var/lib/mysql:cached
-      - ./database/shared_files/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d%
+      - ./database/shared_files/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
